@@ -1,7 +1,7 @@
 var express = require("express"),json;
 var fs = require("fs");
 var app = express();
-var port = 3700;
+var port = process.env.PORT || 8080;;
 var list = [];
 
 function readJsonFile(filepath) {
